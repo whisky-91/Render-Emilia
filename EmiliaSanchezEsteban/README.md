@@ -14,3 +14,5 @@ Puerto: 3306
 Nombre de la base de datos: bdxzlfnl0hkj6tubc5bu
 Usuario: urtbolltvvyvy4yr
 Contraseña: NNwetQBHy7Q5l7eN0njj
+
+Proyecto online: https://render-emilia.onrender.com
