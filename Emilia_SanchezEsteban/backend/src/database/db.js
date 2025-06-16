@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getDbPool = getDbPool;
-var promise_1 = require("mysql2/promise");
-var autentificacion_1 = require("../routes/autentificacion"); //importada dbConfig desde autentificacion para chuquear que haya conexion
-var pool = null;
+const promise_1 = __importDefault(require("mysql2/promise"));
+const autentificacion_1 = require("../routes/autentificacion"); //importada dbConfig desde autentificacion para chuquear que haya conexion
+let pool = null;
 function getDbPool() {
     if (!autentificacion_1.dbConfig) {
         throw new Error('No hay configuración de base de datos válida');
